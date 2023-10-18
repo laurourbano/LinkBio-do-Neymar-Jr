@@ -1,118 +1,166 @@
 :root {
-	--fonte-principal: 'Montserrat', sans-serif;
-	--fonte-secundária: 'Ysabeau Infant', sans-serif;
+  --fonte-principal: "Montserrat", sans-serif;
+  --fonte-secundária: "Ysabeau Infant", sans-serif;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .primeira-secao {
-	width: 100%;
-	height: 100vh;
-	position: relative;
-	text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.primeira-secao video {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .primeira-secao h1 {
-	font-family: var(--fonte-principal);
-	font-size: 25px;
-	color: #000;
-	padding-top: 18rem;
+  font-family: var(--fonte-principal);
+  font-size: 45px;
+  color: #fff;
+  padding-top: 21rem;
+  text-align: center;
+  text-shadow: 2px 6px 3px #000000;
+}
+
+.primeira-secao h1::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 5px;
+  background: linear-gradient(90deg, #ffdf00, #009c3b);
+  bottom: 2px;
+  left: 5px;
+  border-radius: 4px;
 }
 
 .logo {
-	width: 100px;
-	height: 100px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.imgPerfil-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.imgPerfil-titulo h1::after {
+	content: "";
 	position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
-	border: 5px solid #fff;
+	bottom: 12px;
+	right: -20px;
+	background-image: url(../assets/verificado.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
 }
 
 .links {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	position: absolute;
-	top: 70%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 20px;
 }
 
 .links a {
-	background: #000;
-	opacity: 0.7;
-	width: 500px;
-	font-family: var(--fonte-secundária);
-	font-size: 16px;
-	color: #fff;
-	text-decoration: none;
-	padding: 10px;
-	border: none;
-	border-radius: 25px;
-	margin: 0 10px;
+  background: #000;
+  opacity: 0.7;
+  width: 500px;
+  font-family: var(--fonte-secundária);
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  margin: 0 10px;
 }
 
 .links a span {
- display: flex;
+  display: flex;
 }
 
 .links a span img {
-    width: 20px;
-    height: 20px;
-    margin-right: 150px;
+  width: 20px;
+  height: 20px;
+  margin-right: 150px;
 }
 
 .segunda-secao {
-	width: 100%;
-	height: 100vh;
-	background-image: url(../assets/imagem-de-fundo.jpg);
-	background-size: cover;
-	text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/imagem-de-fundo.jpg);
+  background-size: cover;
+  text-align: center;
 }
 
-.segunda-secao h2{
-    font-family: var(--fonte-principal);
-    font-size: 35px;
-    color: #fff;
-    padding-top: 17rem;
-    padding-bottom: 3rem;
+.segunda-secao h2 {
+  font-family: var(--fonte-principal);
+  font-size: 35px;
+  color: #fff;
+  padding-top: 17rem;
+  padding-bottom: 3rem;
 }
 
 table {
-	border-collapse: collapse;
-	width: 50%;
+  border-collapse: collapse;
+  width: 40%;
 }
 
 table,
 th,
 td {
-    margin: 0 auto;
-	border: 1px solid black;
-	padding: 5px;
-	text-align: left;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+tr {
+  text-align: center;
+  height: 60px;
+}
+
+td:first-child {
+  text-align-last: left;
+  padding-left: 30px;
 }
 
 tr:nth-child(odd) {
-	background-color: #000;
-	color: white;
+  background-color: #000;
+  color: white;
 }
 
 tr:nth-child(even) {
-	background-color: #fff;
-	color: black;
+  background-color: #fff;
+  color: black;
 }
 
-.brasoes{
-    width: 20;
-    height: 20px;
-    background-image: url(../assets/imagem-de-fundo.jpg);
-    background-size: cover;
-    text-align: center;
+.brasoes {
+  width: 30px;
+  background-image: url(../assets/imagem-de-fundo.jpg);
+  background-size: cover;
+  text-align: center;
+  margin-right: 10px;
 }
