@@ -2,23 +2,38 @@
 	--fonte-principal: 'Montserrat', sans-serif;
 	--fonte-secundária: 'Ysabeau Infant', sans-serif;
 }
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 .primeira-secao {
 	width: 100%;
 	height: 100vh;
 	position: relative;
 	text-align: center;
 }
+
 .primeira-secao h1 {
 	font-family: var(--fonte-principal);
 	font-size: 25px;
-	color: #fff;
-	padding-top: 17rem;
+	color: #000;
+	padding-top: 18rem;
 }
+
+.logo {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	border: 5px solid #fff;
+}
+
 .links {
 	display: flex;
 	flex-direction: column;
@@ -29,9 +44,10 @@
 	transform: translate(-50%, -50%);
 	gap: 20px;
 }
+
 .links a {
 	background: #000;
-	opacity: 0.5;
+	opacity: 0.7;
 	width: 500px;
 	font-family: var(--fonte-secundária);
 	font-size: 16px;
@@ -42,20 +58,15 @@
 	border-radius: 25px;
 	margin: 0 10px;
 }
-.links a img {
+
+.links a span {
+ display: flex;
+}
+
+.links a span img {
     width: 20px;
     height: 20px;
-    margin: 50px;
-}
-.logo {
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
-	border: 5px solid #fff;
+    margin-right: 150px;
 }
 
 .segunda-secao {
@@ -65,6 +76,7 @@
 	background-size: cover;
 	text-align: center;
 }
+
 .segunda-secao h2{
     font-family: var(--fonte-principal);
     font-size: 35px;
@@ -72,10 +84,12 @@
     padding-top: 17rem;
     padding-bottom: 3rem;
 }
+
 table {
 	border-collapse: collapse;
 	width: 50%;
 }
+
 table,
 th,
 td {
@@ -85,10 +99,16 @@ td {
 	text-align: left;
 }
 
-th {
+tr:nth-child(odd) {
 	background-color: #000;
 	color: white;
 }
+
+tr:nth-child(even) {
+	background-color: #fff;
+	color: black;
+}
+
 .brasoes{
     width: 20;
     height: 20px;
