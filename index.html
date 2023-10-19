@@ -1,79 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkBio do Neymar Jr.</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <section class="primeira-secao">
-      <video
-        autoplay
-        loop
-        muted
-        src="./assets/video/videoneymar.mp4"
-        type="video/mp4"
-      ></video>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
 
-      <div class="container-info">
-        <div class="imgPerfil-titulo">
-          <img
-            class="logo"
-            src="./assets/neymar.jpg"
-            alt="foto do Neymar Jr. com a camisa da seleção brasileira."
-          />
-        </div>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>LinkBio Neymar Jr.</title>
+</head>
+
+<body>
+  <section class="secao-banner">
+
+    <video autoplay loop muted src="./assets/video/videoneymar.mp4" type="video/mp4">
+    </video>
+
+    <div class="container-info">
+      <div class="imgPerfil-titulo">
+        <div class="imgPerfil"></div>
         <h1>Neymar Jr</h1>
-        <div class="links">
-          <a href="#"
-            ><span
-              ><img src="/assets/youtube.png" alt="" />Siga meu canal no
-              YouTube</span
-            ></a
-          >
-          <a href="#"
-            ><span
-              ><img src="/assets/instagram.png" alt="" />Me siga no
-              Instagram</span
-            ></a
-          >
-          <a href="#"
-            ><span
-              ><img src="/assets/twitter.png" alt="" />Me siga no Twitter</span
-            ></a
-          >
-          <a href="#"
-            ><span
-              ><img src="/assets/facebook.png" alt="" />Me siga no
-              Facebook</span
-            ></a
-          >
-          <a href="#"
-            ><span
-              ><img src="/assets/twitch.png" alt="" />Me siga na Twitch</span
-            ></a
-          >
-        </div>
       </div>
-    </section>
 
-    <section class="segunda-secao">
-      <h2>Estatísticas</h2>
+      <div class="arvore-links">
+        <a href="https://www.youtube.com/@NeymarJrReal">
+          <img src="/assets/youtube.png" alt="" />
+          <p>Siga meu canal no YouTube</p>
+        </a>
+        <a href="https://www.instagram.com/neymarjr/">
+          <img src="/assets/instagram.png" alt="" />
+          <p>Me siga no Instagram</p>
+        </a>
+        <a href="https://twitter.com/neymarjr">
+          <img src="/assets/twitter.png" alt="" />
+          <p>Me siga no Twitter</p>
+        </a>
+        <a href="https://www.facebook.com/neymarjr">
+          <img src="/assets/facebook.png" alt="" />
+          <p>Me siga no Facebook</p>
+        </a>
+        <a href="https://www.twitch.tv/neymarjr">
+          <img src="/assets/twitch.png" alt="" />
+          <p>Me siga na Twitch</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
-      <table>
+  <section class="secao-tabela">
+    <h2>Estatísticas</h2>
+
+    <table class="tabela">
+      <thead>
         <tr>
           <th>Times</th>
           <th>Temporadas</th>
@@ -82,8 +65,13 @@
           <th>Assistências</th>
           <th>Títulos</th>
         </tr>
+      </thead>
+      <tbody>
         <tr>
-          <td><img class="brasoes" src="./assets/cbf.png" alt="" />Brasil</td>
+          <td>
+            <img src="./assets/cbf.png" alt="" />
+            <p>Brasil</p>
+          </td>
           <td>13</td>
           <td>124</td>
           <td>77</td>
@@ -92,7 +80,8 @@
         </tr>
         <tr>
           <td>
-            <img class="brasoes" src="./assets/santos.png" alt="" />Santos
+            <img src="./assets/santos.png" alt="" />
+            <p>Santos</p>
           </td>
           <td>5</td>
           <td>230</td>
@@ -102,7 +91,8 @@
         </tr>
         <tr>
           <td>
-            <img class="brasoes" src="./assets/barcelona.png" alt="" />Barcelona
+            <img src="./assets/barcelona.png" alt="" />
+            <p>Barcelona</p>
           </td>
           <td>4</td>
           <td>186</td>
@@ -111,7 +101,10 @@
           <td>8</td>
         </tr>
         <tr>
-          <td><img class="brasoes" src="./assets/psg.png" alt="" />PSG</td>
+          <td>
+            <img src="./assets/psg.png" alt="" />
+            <p>PSG</p>
+          </td>
           <td>6</td>
           <td>173</td>
           <td>118</td>
@@ -120,7 +113,8 @@
         </tr>
         <tr>
           <td>
-            <img class="brasoes" src="./assets/alhilal.png" alt="" />Al-Hilal
+            <img src="./assets/alhilal.png" alt="" />
+            <p>Al-Hilal</p>
           </td>
           <td>1</td>
           <td>0</td>
@@ -128,7 +122,10 @@
           <td>77</td>
           <td>0</td>
         </tr>
-      </table>
-    </section>
-  </body>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </section>
+</body>
+
 </html>
